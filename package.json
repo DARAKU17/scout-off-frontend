@@ -12,6 +12,7 @@
     "lint": "next lint",
     "test": "jest --passWithNoTests --maxWorkers=2 --workerIdleMemoryLimit=512MB",
     "test:watch": "jest --watch",
+    "test:memory": "cross-env NODE_OPTIONS=--expose-gc jest __tests__/api/ipfs/upload/streamingMemory.test.ts --runInBand",
     "test:coverage": "jest --passWithNoTests --maxWorkers=2 --workerIdleMemoryLimit=512MB --coverage",
     "typecheck": "tsc --noEmit",
     "type-check": "tsc --noEmit --project tsconfig.typecheck.json",
